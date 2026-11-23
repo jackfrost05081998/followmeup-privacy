@@ -34,7 +34,7 @@
     <li>
       <strong>License &amp; Authentication Information:</strong> When you activate or use the Extension,
       your license key and a randomly generated browser-profile identifier (<code>machineId</code>, formatted
-      as <code>FB-...</code>) are stored locally in <code>chrome.storage.local</code> and transmitted to
+      as <code>FB-...</code>) are stored locally in local extension storage and transmitted to
       <code>https://fb-followup-license.alexis-diaz050898.workers.dev</code> to verify license validity,
       device binding, and expiration status.
     </li>
@@ -47,7 +47,7 @@
     </li>
     <li>
       <strong>Extension Preferences &amp; State:</strong> View mode preferences (inbox-only vs. full view),
-      active tab references, and update check timestamps are stored locally via <code>chrome.storage.local</code>.
+      active tab references, and update check timestamps are stored locally via local extension storage.
     </li>
     <li>
       <strong>Update Checks &amp; Standard Network Metadata:</strong> The Extension periodically requests
@@ -74,7 +74,7 @@
   <h2>4. Data Retention and Control</h2>
   <p>
     You can deactivate your license key at any time within the Extension's side panel, which clears the
-    stored key from <code>chrome.storage.local</code>. Uninstalling the Extension removes all locally stored
+    stored key from local extension storage. Uninstalling the Extension removes all locally stored
     extension data, and clearing site data for <code>facebook.com</code> removes any local sent-history records.
   </p>
 
